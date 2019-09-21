@@ -14,7 +14,7 @@ app.use(fileUpload());
 // Upload endpoint
 
 app.post('/upload', (req, res) => {
-    console.log("Hit Backend Route");
+    // console.log("Hit Backend Route");
     if(req.files === null) {
         return res.status(400).json({msg: 'No File Uploaded'});
     } 
