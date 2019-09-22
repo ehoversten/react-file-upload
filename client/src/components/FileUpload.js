@@ -35,6 +35,7 @@ const FileUpload = () => {
             const { fileName, filePath } = res.data;
             setUploadedFile({ fileName, filePath });
 
+            setFilename("Choose File");
             setMessage('File Uploaded');
         } catch(err) {
             if(err.response.status === 500) {
